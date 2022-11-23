@@ -491,14 +491,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   color: #ffffff;
 }
-
-/* .footer-list-link {
-  display: block;
+.footer-list {
+  display: inline-block;
   width: 206px;
-  height: 80px; */
+  height: 80px;
+}
 
 .footer-social-link {
   display: flex;
@@ -524,6 +525,15 @@ body {
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+}
+
+.footer-address-social-icon {
+  display: flex;
+  align-items: baseline;
+}
+
+.address {
+  margin-right: 70px;
 }
 /*--------------------- СТИЛІ ДЛЯ ПОРТФОЛІО------------------ */
 
