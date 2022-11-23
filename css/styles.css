@@ -176,7 +176,9 @@ body {
 }
 
 .auth-nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+
   color: var(--primery-text-color);
 
   font-weight: 500;
@@ -187,10 +189,18 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.auth-nav-link:hover .auth-nav-icons,
+.auth-nav-link:focus .auth-nav-icons {
+  fill: var(--accent-color);
+}
 
 .auth-nav-link:hover,
 .auth-nav-link:focus {
   color: var(--accent-color);
+}
+
+.auth-nav-icons {
+  margin-right: 10px;
 }
 /* -----------------------section---------------------- */
 
@@ -263,6 +273,7 @@ body {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.06em;
   line-height: 1.88;
 }
@@ -299,6 +310,18 @@ body {
   line-height: 1.71;
 }
 
+.featufe-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondery-bg-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.feature-icon {
+}
 /*--------------------work and team----------*/
 
 .work-section {
@@ -339,6 +362,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-list-description {
@@ -348,12 +372,78 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-bg-color);
 }
 
 .team-list-title {
   margin-bottom: 10px;
 }
 
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-bg-color);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  outline: transparent;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-text-color);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/* --------------clients--------------- */
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.clients-link {
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
+}
 /*-------------------- footer-------------- */
 
 .footer {
@@ -396,7 +486,45 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
+
+/* .footer-list-link {
+  display: block;
+  width: 206px;
+  height: 80px; */
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-icon {
+  fill: var(--white-text-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
 /*--------------------- СТИЛІ ДЛЯ ПОРТФОЛІО------------------ */
 
 /*----------------- filters------------------- */
@@ -422,11 +550,13 @@ body {
 .button.secondary:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.secondary.current {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*------------------- projects----------------- */
@@ -462,3 +592,14 @@ body {
 .portfolio-list {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
+
+.portfolio {
+  display: block;
+}
+
+.portfolio:hover,
+.portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/* ------------------icons------------------- */
