@@ -189,10 +189,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.auth-nav-link:hover .auth-nav-icons,
-.auth-nav-link:focus .auth-nav-icons {
-  fill: var(--accent-color);
-}
 
 .auth-nav-link:hover,
 .auth-nav-link:focus {
@@ -201,6 +197,7 @@ body {
 
 .auth-nav-icons {
   margin-right: 10px;
+  fill: currentColor;
 }
 /* -----------------------section---------------------- */
 
@@ -387,21 +384,18 @@ body {
   height: 44px;
   background-color: var(--white-bg-color);
   border-radius: 50%;
+  color: #afb1b8;
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  color: var(--white-text-color);
   outline: transparent;
 }
 
 .social-icon {
-  fill: #afb1b8;
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--white-text-color);
+  fill: currentColor;
 }
 
 .social-list {
@@ -426,23 +420,18 @@ body {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
-  padding: 16px 32px;
+  color: #afb1b8;
 }
 
 .clients-link {
-  fill: #afb1b8;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .clients-item:hover,
 .clients-item:focus {
-  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 /*-------------------- footer-------------- */
 
@@ -496,9 +485,7 @@ body {
   color: #ffffff;
 }
 .footer-list {
-  display: inline-block;
-  width: 206px;
-  height: 80px;
+  margin-left: 70px;
 }
 
 .footer-social-link {
@@ -532,9 +519,6 @@ body {
   align-items: baseline;
 }
 
-.address {
-  margin-right: 70px;
-}
 /*--------------------- СТИЛІ ДЛЯ ПОРТФОЛІО------------------ */
 
 /*----------------- filters------------------- */
@@ -548,12 +532,13 @@ body {
 }
 
 .button.secondary {
-  min-width: 73px;
   font-weight: 500;
+  line-height: 1.63;
   padding: 6px 22px;
   color: var(--title-text-color);
   background-color: var(--secondery-bg-color);
   border: 1px solid transparent;
+  letter-spacing: 0.03em;
 }
 
 .button.secondary:hover,
